@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuvo</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- Reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Font -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font -->
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
+
+
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal js-modal">
+        <div class="container-modal">
+            <div class="modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-heading">
+                <span>We are Shuvo Company</span>
+                <h2>lets start your
+                    <span>project</span>
+                </h2>
+            </div>
+            <div class="modal-contact-form">
+                <div class="form-contact">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="form-contact">
+                    <input type="text" placeholder="Contact #">
+                    <input type="email" placeholder="City / Country">
+                </div>
+                <div class="form-contact">
+                    <input type="text" placeholder="Project type">
+                    <input type="email" placeholder="Budget">
+                </div>
+                <div class="form-contact">
+                    <textarea name="comments" id="" rows="6"
+                        placeholder="Please explain your project in detail."></textarea>
+                </div>
+                <div class="main">
+                    <label class="form-check">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                        Contact by phone is preferred
+                    </label>
+
+                </div>
+                <a href="" class="btn nav-btn">Submit Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul class="main-nav">
+                    <li class="nav-item-link active home"><a href="#">Home</a></li>
+                    <li class="nav-item-link about"><a href="#about">About Us</a></li>
+                    <li class="nav-item-link portfolio"><a href="#portfolio">Our Work</a></li>
+                    <li class="nav-item-link pricing"><a href="#pricing">Pricing Plans</a></li>
+                    <li class="nav-item-link contact"><a href="#contact">Contact</a></li>
+
+                    <a class="btn nav-btn js-btn">Get Started Now</a>
+                </ul>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!-- side nav -->
+        <div class="menu-header">
+            <!-- <div class="menu-title">
+                <h2>Abusayed Shuvo</h2>
+            </div> -->
+            <div class="btn-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="side-menu">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="nav-menu">
+                    <ul class="main-nav-menu side-nav">
+                        <li class="nav-item"><a class="item-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="item-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="item-link" href="#portfolio">Our Work</a></li>
+                        <li class="nav-item"><a class="item-link" href="#pricing">Pricing Plans</a></li>
+                        <li class="nav-item"><a class="item-link" href="#contact">Contact</a></li>
+                        <li class="get-started-btn"><a class="btn nav-btn nav-btn-menu js-btn">Get Started Now</a></li>
+                    </ul>
+                </div>
+                <div class="socials-icon menu-icon">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider -->
+    <section id="home" class="slider-section ">
+        <div class="slider">
+            <div class="banner slider1">
+                <div class="slider-caption text-slider">
+                    <p>Lorem ipsum sit amet purus.</p>
+                    <h1>Corporate Design<br>
+                        Agency In NewYork USA.
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae mi,<br>
+                        dapi bus diam. Mauris malesuada, nisl non rutrum commodo, magna.
+                    </p>
+                </div>
+            </div>
+            <div class="banner slider2">
+                <div class="slider-caption text-slider2">
+                    <h1>We have the<br>
+                        Best plans for Clients
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae mi,<br>
+                        dapi bus diam. Mauris malesuada, nisl non rutrum commodo, magna.
+                    </p>
+                </div>
+            </div>
+            <div class="banner slider3">
+                <div class="slider-caption text-slider3">
+                    <h1>Corporate Design<br>
+                        Agency In NewYork USA.
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae mi,<br>
+                        dapi bus diam. Mauris malesuada, nisl non rutrum commodo, magna.
+                    </p>
+                </div>
+            </div>
+            <div class="banner slider4">
+                <div class="slider-caption text-slider4">
+                    <h1>Corporate Design<br>
+                        Agency In NewYork USA.
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae mi,<br>
+                        dapi bus diam. Mauris malesuada, nisl non rutrum commodo, magna.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="dot-nav slick-dots doat">
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot-line"></div>
+            </div>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot-line"></div>
+            </div>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot-line"></div>
+            </div>
+            <div class="dots">
+                <div class="dot"></div>
+            </div>
+        </div> -->
+        <div class="socials-icon slider-icon">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="#about" class="scroll-down">Scroll Down
+            <i class="fas fa-arrow-down"></i>
+        </a>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="about-container">
+            <div class="fadeinleft aos-init" data-aos="fade-right">
+                <p class="text-info text-pink">Basic info about company</p>
+                <h1>Corporate Design
+                    <span>and Media Agency</span>
+                    <span>in NewYork</span>
+
+                </h1>
+            </div>
+            <div class="fadeinright text-grey" data-aos="fade-left">
+                <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae
+                    diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed
+                    mi finibus, vel tristique risus faucibus.</p>
+                <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae
+                    diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus.</p>
+            </div>
+        </div>
+        <div class="container about-box">
+            <div class="first-box box-main">
+                <i class="fas fa-lightbulb"></i>
+                <h5>We have some investment<br>
+                    ideas for you.</h5>
+            </div>
+            <div class="second-box box-main">
+                <i class="fas fa-briefcase"></i>
+                <h5>Your business is out<br>
+                    top priority.</h5>
+            </div>
+            <div class="third-box box-main">
+                <i class="fas fa-grin-hearts"></i>
+                <h5>We love our valued <br>
+                    customers.</h5>
+            </div>
+        </div>
+        <!-- <div class="about-img" data-aos="fade-right">
+            <img src="images/about_image/about-img.png" alt="">
+        </div> -->
+
+    </section>
+    <!-- Stats -->
+    <div class="half-section">
+        <div class="skill-box">
+            <p class="text-pink">Check Our Skills</p>
+            <h2>We have best Creative<br>
+                skilled team.</h2>
+            <ul class="text-left">
+                <li class="custom-progress">
+                    <h6>Business Consulting
+                        <span>85%</span>
+                    </h6>
+                    <div class="progress">
+                        <div class="progress-bar first-bar" data-done="85"></div>
+                    </div>
+                </li>
+                <li class="custom-progress">
+                    <h6>Financial Advising
+                        <span>68%</span>
+                    </h6>
+                    <div class="progress">
+                        <div class="progress-bar second-bar" data-done="68"></div>
+                    </div>
+                </li>
+                <li class="custom-progress">
+                    <h6>Brand Consulting
+                        <span>85%</span>
+                    </h6>
+                    <div class="progress">
+                        <div class="progress-bar third-bar" data-done="85"></div>
+                    </div>
+                </li>
+                <li class="custom-progress">
+                    <h6>Strategic Consulting
+                        <span>89%</span>
+                    </h6>
+                    <div class="progress">
+                        <div class="progress-bar fourth-bar" data-done="89"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="stage-outer">
+            <div class="item-team">
+                <img src="images/team/team-img1.jpg" alt="">
+            </div>
+            <div class="item-team">
+                <img src="images/team/team-img2.jpg" alt="">
+            </div>
+            <div class="item-team">
+                <img src="images/team/team-img3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <section id="portfolio">
+        <div class="title" data-aos="fade-up">
+            <div class="title-content">
+                <p class="text-pink">Basic info about work</p>
+                <h1>Creative Design Work</h1>
+                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit
+                    dolor.<br>
+                    Vivamus gravida, neque nec interdum cursus, erat ligula.
+                </p>
+            </div>
+        </div>
+        <div class="gallery-list">
+            <div class="list active" data-filter="All">All</div>
+            <div class="list" data-filter="Agencies">Agencies</div>
+            <div class="list" data-filter="Clinical">Clinical</div>
+            <div class="list" data-filter="Personal">Personal</div>
+            <div class="list" data-filter="Medical">Medical</div>
+        </div>
+        <div class="container">
+            <div class="gallery-item Agencies Clinical Personal Medical">
+                <img class="image" src="images/portfolio/portfolio-img1.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <i class="fas fa-search"></i>
+                        <h4>Mason Jacob</h4>
+                        <span>New York, USA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item Agencies Clinical Medical">
+                <img class="image" src="images/portfolio/portfolio-img2.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <i class="fas fa-search"></i>
+                        <h4>Mason Jacob</h4>
+                        <span>New York, USA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item Clinical Personal">
+                <img class="image" src="images/portfolio/portfolio-img3.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <i class="fas fa-search"></i>
+                        <h4>Mason Jacob</h4>
+                        <span>New York, USA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item Medical">
+                <img class="image" src="images/portfolio/portfolio-img4.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <i class="fas fa-search"></i>
+                        <h4>Mason Jacob</h4>
+                        <span>New York, USA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item Agencies Medical">
+                <img class="image" src="images/portfolio/portfolio-img5.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <i class="fas fa-search"></i>
+                        <h4>Mason Jacob</h4>
+                        <span>New York, USA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item Clinical Medical">
+                <img class="image" src="images/portfolio/portfolio-img6.jpg" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <i class="fas fa-search"></i>
+                        <h4>Mason Jacob</h4>
+                        <span>New York, USA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-more">
+            <a class="btn btn-portfolio nav-btn" href="">View More Portfolio</a>
+        </div>
+    </section>
+    <!-- parallax -->
+    <div class="parallax">
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <i class="fas fa-quote-right"></i>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi,
+                    vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod
+                    dolor enim et mi. In at tempor purus. </p>
+                <img src="images/testimonial/testimonial-1.png" alt="">
+                <h3>Steve Austin</h3>
+            </div>
+            <div class="testimonial">
+                <i class="fas fa-quote-right"></i>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi,
+                    vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod
+                    dolor enim et mi. In at tempor purus. </p>
+                <img src="images/testimonial/testimonial-2.png" alt="">
+                <h3>Steve Austin</h3>
+            </div>
+            <div class="testimonial">
+                <i class="fas fa-quote-right"></i>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi,
+                    vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod
+                    dolor enim et mi. In at tempor purus. </p>
+                <img src="images/testimonial/testimonial-1 (1).png" alt="">
+                <h3>Steve Austin</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="pricing-text">
+            <h3 class="text-pink">Ready for an Investment</h3>
+            <h1>Choose a Finance Plan</h1>
+            <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
+                Vivamus gravida,<br>
+                neque nec interdum cursus, erat ligula.</p>
+        </div>
+        <div class="pricing-main">
+            <div class="plan" data-aos="fade-right">
+                <div class="pricing-item">
+                    <h2>Basic</h2>
+                    <div class="pricing-price">
+                        <span class="price-dollar">$</span>
+                        <span class="pricing-currency">29
+                            <span class="month">Month</span>
+                        </span>
+                        <p class="text-grey">It has survived not only five centuries, but also the leap into electronic
+                        </p>
+                    </div>
+                    <ul class="pricing-list">
+                        <li><i class="fas fa-check"></i>Lorem ipsum dolor.</li>
+                        <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                        <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fas fa-check"></i>Lorem ipsum.</li>
+                    </ul>
+                    <a class="btn btn-medium">Choose plan</a>
+                </div>
+            </div>
+            <div class="plan active selected active" data-aos="fade-up">
+                <div class="pricing-item active">
+                    <h2>Popular</h2>
+                    <div class="pricing-price">
+                        <span class="price-dollar">$</span>
+                        <span class="pricing-currency">69
+                            <span class="month">Month</span>
+                        </span>
+                        <p class="text-grey">It has survived not only five centuries, but also the leap into electronic
+                        </p>
+                    </div>
+                    <ul class="pricing-list">
+                        <li><i class="fas fa-check"></i>Lorem ipsum dolor.</li>
+                        <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                        <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fas fa-check"></i>Lorem ipsum.</li>
+                    </ul>
+                    <a class="btn btn-medium">Choose plan</a>
+                </div>
+            </div>
+            <div class="plan" data-aos="fade-left">
+                <div class="pricing-item">
+                    <h2>Advance</h2>
+                    <div class="pricing-price">
+                        <span class="price-dollar">$</span>
+                        <span class="pricing-currency">99
+                            <span class="month">Month</span>
+                        </span>
+                        <p class="text-grey">It has survived not only five centuries, but also the leap into electronic
+                        </p>
+                    </div>
+                    <ul class="pricing-list">
+                        <li><i class="fas fa-check"></i>Lorem ipsum dolor.</li>
+                        <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                        <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fas fa-check"></i>Lorem ipsum.</li>
+                    </ul>
+                    <a class="btn btn-medium">Choose plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+        <div class="contact__heading">
+            <p class="text-pink">How to reach us</p>
+            <h1>Let's Get in Touch</h1>
+        </div>
+        <div class="contact-us">
+            <div class="contact-details">
+                <p>West is not just about graphic design; it's more than that. We offer integral communication services,
+                    and we're responsible for our process and results. We thank each client and their projects.</p>
+                <div class="box1">
+                    <div class="address ctact">
+                        <h4 class="text-pink">Our Address</h4>
+                        <p>123 Stree New York City, United States Of America.</p>
+                    </div>
+                    <div class="phone ctact">
+                        <h4 class="text-pink">Our Phone</h4>
+                        <p>Office Telephone : 001 01085379709 Mobile : 001 63165370895</p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="email ctact">
+                        <h4 class="text-pink">Our Email</h4>
+                        <p>Main Email : admin@website.com Inquiries : email@website.com</p>
+                    </div>
+                    <div class="support ctact">
+                        <h4 class="text-pink">Our Support</h4>
+                        <p>Main Support : info@website.com Sales : support@website</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-box">
+                <div class="form-group">
+                    <div class="contact-form">
+                        <input name="name" type="text" placeholder="Your Name*">
+                    </div>
+                    <div class="contact-form">
+                        <input name="email" type="text" placeholder="Your Email*">
+                    </div>
+                </div>
+                <div class="contact-form subject">
+                    <input name="subject" type="text" placeholder="Your Subject...">
+                </div>
+                <div class="contact-form message">
+                    <textarea name="comments" id="" rows="6" placeholder="Your Message..."></textarea>
+                </div>
+                <div class="btn-submit">
+                    <button type="submit" class="btn contact-btn nav-btn">Submit Request</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer">
+        <div class="socials-icon footer-icon">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-google-plus-g"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-pinterest-p"></i></a>
+        </div>
+        <p>© 2021 Shuvo. Made With Love By Abusayed Shuvo</p>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick slider -->
+    <!-- <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
