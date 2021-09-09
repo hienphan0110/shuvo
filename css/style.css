@@ -561,7 +561,8 @@ li.slick-active button {
 }
 /* PARALLAX */
 .parallax {
-  background: url(../images/parallax/parallax-img.jpg) center / cover no-repeat;
+  background: url("../images/parallax/parallax-img.jpg") center / cover
+    no-repeat;
   background-attachment: fixed;
 }
 .parallax .testimonial-container {
