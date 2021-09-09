@@ -21,17 +21,7 @@ modalContainer.onclick =  function(event) {
     event.stopPropagation()
 }
 
-
-
-//    NAV
-// const navLinks = document.querySelectorAll('.nav-link')
-// navLinks.forEach(navLink => {
-//     navLink.onclick = function () {
-//         $(".nav-link.active").removeClass("active")
-//         this.classList.add("active")
-//     }
-// })
-   
+// 
 $(document).on('scroll', function () {
     if ($(this).scrollTop() > 260) { 
         $('.header').addClass('header-sticky');
@@ -83,13 +73,13 @@ menuItems.forEach(menuItem => {
 
 // slider
 $('.slider').slick({
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
     infinite: true,
     arrows: false,
-    // appendArrows: '.control-pre-next',
     dots: true,
-    // appendDots: $("dot"),
     // autoplay: true,
-    // autoplaySpeed: 3000,
+    autoplaySpeed: 3000,
     fade: true,
     cssEase: 'linear',
     speed: 400,
@@ -159,3 +149,36 @@ plans.forEach(plans => {
         easing: 'ease-in-sine',
         delay: 100,
     }); 
+
+
+    // 
+    const textLeft = document.querySelector('.text-left')
+    const progressBars = document.querySelectorAll('.progress-bar')
+
+    window.addEventListener('scroll', () => {
+        const sectionPos = textLeft.getBoundingClientRect().top;
+        const screenPos = window.innerHeight / 2;
+
+        function showProgress() {
+            progressBars.forEach(progressBar => {
+                const value = progressBar.dataset.progress;
+                // progressBar.style.opacity = 1;
+                progressBar.style.width = `${value}%`;
+            },)
+        }
+        function hideProgress() {
+            progressBars.forEach(p => {
+                // p.style.opacity = 0;
+                p.style.width = 0;
+            })
+            
+        }
+
+        if (sectionPos < screenPos) {
+            showProgress();
+        }
+        else {
+            hideProgress();
+        }
+    })
+    

@@ -1,15 +1,10 @@
 html {
   font-family: "Roboto", sans-serif;
 }
-.text-pink {
-  color: #c32865;
-}
-.text-grey {
-  color: #797979;
-}
 /* modal */
 .modal {
-  position: fixed;
+  position: absolute;
+  width: 100%;
   top: 0;
   right: 0;
   bottom: 0;
@@ -19,6 +14,7 @@ html {
   align-items: center;
   justify-content: center;
   z-index: 99;
+  height: 100vh;
 }
 .js-modal {
   display: none;
@@ -33,7 +29,6 @@ html {
   min-width: 900px;
   position: relative;
   text-align: center;
-  /* width: 100%; */
 }
 .modal-close {
   position: absolute;
@@ -79,6 +74,10 @@ html {
   outline: none;
   color: #fff;
 }
+.form-contact input:focus,
+.form-contact textarea:focus {
+  border-color: #c32865;
+}
 .main {
   margin: 36px 0 60px;
 }
@@ -107,7 +106,7 @@ html {
   background-color: #ccc;
 }
 .form-check input:checked ~ .checkmark {
-  background-color: #c83565;
+  background-color: #c32865;
 }
 .checkmark:after {
   content: "";
@@ -130,7 +129,6 @@ html {
 }
 .header {
   position: absolute;
-  /* max-height: 1140px; */
   width: 100%;
   height: 100px;
   z-index: 99;
@@ -140,15 +138,14 @@ html {
   position: fixed;
   width: 100%;
   background-color: #000;
-  height: 100px;
-  top: 0;
+  /* height: 100px; */
+  /* top: 0; */
 }
 .navbar {
   position: absolute;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  /* margin: 0px auto; */
   height: 100%;
   align-items: center;
   cursor: pointer;
@@ -261,23 +258,26 @@ li.nav-item {
   position: relative;
 }
 .slider1 {
-  background: url("./images/slider/slider-1.jpg") center center / cover
+  background: url("../images/slider/slider-1.jpg") center center / cover
     no-repeat;
   position: relative;
   height: 50vw;
 }
 .slider2 {
-  background: url("/images/slider/slider-2.jpg") center center / cover no-repeat;
+  background: url("../images/slider/slider-2.jpg") center center / cover
+    no-repeat;
   position: relative;
   height: 50vw;
 }
 .slider3 {
-  background: url("/images/slider/slider-3.jpg") center center / cover no-repeat;
+  background: url("../images/slider/slider-3.jpg") center center / cover
+    no-repeat;
   position: relative;
   height: 50vw;
 }
 .slider4 {
-  background: url("/images/slider/slider-4.jpg") center center / cover no-repeat;
+  background: url("../images/slider/slider-4.jpg") center center / cover
+    no-repeat;
   position: relative;
   height: 50vw;
 }
@@ -309,27 +309,6 @@ li.nav-item {
   line-height: 50px;
   padding: 16px 0;
 }
-/* .dot-nav {
-  position: absolute;
-  top: 40%;
-  left: 46px;
-}
-.dots {
-  width: 20px;
-}
-.dot {
-  border: 3px solid #fff;
-  width: inherit;
-  height: 20px;
-  border-radius: 50px;
-  cursor: pointer;
-} */
-/* .dot-line {
-  height: 20px;
-  width: 3px;
-  background: #fff;
-  margin: 0 auto;
-} */
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
@@ -339,9 +318,6 @@ li.nav-item {
   width: 32px;
   /* display: grid; */
   height: 124px;
-}
-.slick-dots li {
-  margin: 4px 0;
 }
 .slick-dots li button {
   border: 2.5px solid #fff;
@@ -383,7 +359,6 @@ li.slick-active button {
   padding: 120px 0;
   width: 100%;
 }
-
 .scroll-down {
   position: absolute;
   bottom: 30px;
@@ -400,6 +375,7 @@ li.slick-active button {
 }
 .text-info {
   font-size: 20px;
+  color: #c32865;
 }
 .fadeinleft h1 {
   display: grid;
@@ -408,10 +384,11 @@ li.slick-active button {
   font-size: 40px;
 }
 .fadeinright {
-  /* width: 50%; */
+  color: #797979;
   width: 480px;
   font-size: 17px;
   line-height: 28px;
+  font-weight: 100;
 }
 .about-box {
   justify-content: space-around;
@@ -465,21 +442,11 @@ li.slick-active button {
   margin: 22px 0;
 }
 .progress-bar {
-  background-color: #c83565;
-  animation: progress-bar ease-in-out 2s;
+  background-color: #c32865;
+  /* animation: progress-bar ease-in-out 2s; */
   height: 8px;
-}
-.first-bar {
-  width: 85%;
-}
-.second-bar {
-  width: 68%;
-}
-.third-bar {
-  width: 85%;
-}
-.fourth-bar {
-  width: 89%;
+  /* width: 0; */
+  transition: all 1s;
 }
 @keyframes progress-bar {
   0% {
@@ -512,6 +479,10 @@ li.slick-active button {
   margin: 24px 0;
   font-size: 38px;
   font-weight: 500;
+}
+.text-description {
+  color: #797979;
+  font-weight: 100;
 }
 .gallery-list {
   color: #fff;
@@ -554,6 +525,7 @@ li.slick-active button {
   overflow: hidden;
   height: 0;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 .text {
   color: white;
@@ -647,6 +619,7 @@ li.slick-active button {
   color: #fff;
   margin: 22px;
   font-weight: 100;
+  padding: 32px 0;
 }
 .plan.active {
   background: #202020;
@@ -688,6 +661,7 @@ li.slick-active button {
 .pricing-price p {
   font-size: 15px;
   margin: auto;
+  color: #797979;
 }
 .fa-check {
   color: #62be10;
@@ -752,6 +726,7 @@ li.slick-active button {
   width: 100%;
 }
 .ctact h4 {
+  color: #c32865;
   margin-bottom: 10px;
   font-size: 16px;
 }
@@ -796,7 +771,10 @@ li.slick-active button {
   padding: 14px;
   font-size: 16px;
   text-transform: uppercase;
-  /* border: none; */
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #c32865;
 }
 .subject,
 .message {

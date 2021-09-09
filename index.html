@@ -16,6 +16,9 @@
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
 
     <!-- Reset css -->
@@ -42,47 +45,6 @@
 </head>
 
 <body>
-    <!-- Modal -->
-    <div class="modal js-modal">
-        <div class="container-modal">
-            <div class="modal-close">
-                <i class="fas fa-times"></i>
-            </div>
-            <div class="modal-heading">
-                <span>We are Shuvo Company</span>
-                <h2>lets start your
-                    <span>project</span>
-                </h2>
-            </div>
-            <div class="modal-contact-form">
-                <div class="form-contact">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="form-contact">
-                    <input type="text" placeholder="Contact #">
-                    <input type="email" placeholder="City / Country">
-                </div>
-                <div class="form-contact">
-                    <input type="text" placeholder="Project type">
-                    <input type="email" placeholder="Budget">
-                </div>
-                <div class="form-contact">
-                    <textarea name="comments" id="" rows="6"
-                        placeholder="Please explain your project in detail."></textarea>
-                </div>
-                <div class="main">
-                    <label class="form-check">
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                        Contact by phone is preferred
-                    </label>
-
-                </div>
-                <a href="" class="btn nav-btn">Submit Now</a>
-            </div>
-        </div>
-    </div>
     <!-- Header -->
     <div class="header">
         <div class="navbar">
@@ -106,9 +68,6 @@
         </div>
         <!-- side nav -->
         <div class="menu-header">
-            <!-- <div class="menu-title">
-                <h2>Abusayed Shuvo</h2>
-            </div> -->
             <div class="btn-close">
                 <i class="fas fa-times"></i>
             </div>
@@ -131,6 +90,47 @@
                     <a href=""><i class="fab fa-twitter"></i></a>
                     <a href=""><i class="fab fa-linkedin-in"></i></a>
                     <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="modal js-modal">
+            <div class="container-modal">
+                <div class="modal-close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="modal-heading">
+                    <span>We are Shuvo Company</span>
+                    <h2>lets start your
+                        <span>project</span>
+                    </h2>
+                </div>
+                <div class="modal-contact-form">
+                    <div class="form-contact">
+                        <input name="name" type="text" placeholder="Name">
+                        <input name="email" type="text" placeholder="Email">
+                    </div>
+                    <div class="form-contact">
+                        <input name="phone" type="text" placeholder="Contact #">
+                        <input name="address" type="text" placeholder="City / Country">
+                    </div>
+                    <div class="form-contact">
+                        <input name="projecttype" type="text" placeholder="Project type">
+                        <input name="budget" type="text" placeholder="Budget">
+                    </div>
+                    <div class="form-contact">
+                        <textarea name="comments" id="" rows="6"
+                            placeholder="Please explain your project in detail."></textarea>
+                    </div>
+                    <div class="main">
+                        <label class="form-check">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            Contact by phone is preferred
+                        </label>
+
+                    </div>
+                    <a href="" class="btn nav-btn">Submit Now</a>
                 </div>
             </div>
         </div>
@@ -181,23 +181,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="dot-nav slick-dots doat">
-            <div class="dots">
-                <div class="dot"></div>
-                <div class="dot-line"></div>
-            </div>
-            <div class="dots">
-                <div class="dot"></div>
-                <div class="dot-line"></div>
-            </div>
-            <div class="dots">
-                <div class="dot"></div>
-                <div class="dot-line"></div>
-            </div>
-            <div class="dots">
-                <div class="dot"></div>
-            </div>
-        </div> -->
         <div class="socials-icon slider-icon">
             <a href=""><i class="fab fa-facebook-f"></i></a>
             <a href=""><i class="fab fa-twitter"></i></a>
@@ -213,7 +196,7 @@
     <section id="about">
         <div class="about-container">
             <div class="fadeinleft aos-init" data-aos="fade-right">
-                <p class="text-info text-pink">Basic info about company</p>
+                <p class="text-info">Basic info about company</p>
                 <h1>Corporate Design
                     <span>and Media Agency</span>
                     <span>in NewYork</span>
@@ -253,7 +236,7 @@
     <!-- Stats -->
     <div class="half-section">
         <div class="skill-box">
-            <p class="text-pink">Check Our Skills</p>
+            <p>Check Our Skills</p>
             <h2>We have best Creative<br>
                 skilled team.</h2>
             <ul class="text-left">
@@ -262,7 +245,7 @@
                         <span>85%</span>
                     </h6>
                     <div class="progress">
-                        <div class="progress-bar first-bar" data-done="85"></div>
+                        <div class="progress-bar" data-progress="85"></div>
                     </div>
                 </li>
                 <li class="custom-progress">
@@ -270,7 +253,7 @@
                         <span>68%</span>
                     </h6>
                     <div class="progress">
-                        <div class="progress-bar second-bar" data-done="68"></div>
+                        <div class="progress-bar second-bar" data-progress="68"></div>
                     </div>
                 </li>
                 <li class="custom-progress">
@@ -278,7 +261,7 @@
                         <span>85%</span>
                     </h6>
                     <div class="progress">
-                        <div class="progress-bar third-bar" data-done="85"></div>
+                        <div class="progress-bar third-bar" data-progress="85"></div>
                     </div>
                 </li>
                 <li class="custom-progress">
@@ -286,7 +269,7 @@
                         <span>89%</span>
                     </h6>
                     <div class="progress">
-                        <div class="progress-bar fourth-bar" data-done="89"></div>
+                        <div class="progress-bar fourth-bar" data-progress="89"></div>
                     </div>
                 </li>
             </ul>
@@ -307,9 +290,9 @@
     <section id="portfolio">
         <div class="title" data-aos="fade-up">
             <div class="title-content">
-                <p class="text-pink">Basic info about work</p>
+                <p class="text-info">Basic info about work</p>
                 <h1>Creative Design Work</h1>
-                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit
+                <p class="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit
                     dolor.<br>
                     Vivamus gravida, neque nec interdum cursus, erat ligula.
                 </p>
@@ -343,7 +326,7 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery-item Clinical Personal">
+            <div class="gallery-item Agencies Clinical Personal">
                 <img class="image" src="images/portfolio/portfolio-img3.jpg" alt="">
                 <div class="overlay">
                     <div class="text">
@@ -363,7 +346,7 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery-item Agencies Medical">
+            <div class="gallery-item  Medical">
                 <img class="image" src="images/portfolio/portfolio-img5.jpg" alt="">
                 <div class="overlay">
                     <div class="text">
@@ -420,9 +403,9 @@
     <!-- Pricing -->
     <section id="pricing">
         <div class="pricing-text">
-            <h3 class="text-pink">Ready for an Investment</h3>
+            <h3 class="text-info">Ready for an Investment</h3>
             <h1>Choose a Finance Plan</h1>
-            <p class="text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
+            <p class="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit dolor.
                 Vivamus gravida,<br>
                 neque nec interdum cursus, erat ligula.</p>
         </div>
@@ -435,7 +418,7 @@
                         <span class="pricing-currency">29
                             <span class="month">Month</span>
                         </span>
-                        <p class="text-grey">It has survived not only five centuries, but also the leap into electronic
+                        <p>It has survived not only five centuries, but also the leap into electronic
                         </p>
                     </div>
                     <ul class="pricing-list">
@@ -456,7 +439,7 @@
                         <span class="pricing-currency">69
                             <span class="month">Month</span>
                         </span>
-                        <p class="text-grey">It has survived not only five centuries, but also the leap into electronic
+                        <p>It has survived not only five centuries, but also the leap into electronic
                         </p>
                     </div>
                     <ul class="pricing-list">
@@ -477,7 +460,7 @@
                         <span class="pricing-currency">99
                             <span class="month">Month</span>
                         </span>
-                        <p class="text-grey">It has survived not only five centuries, but also the leap into electronic
+                        <p>It has survived not only five centuries, but also the leap into electronic
                         </p>
                     </div>
                     <ul class="pricing-list">
@@ -495,7 +478,7 @@
     <!-- Contact -->
     <section id="contact">
         <div class="contact__heading">
-            <p class="text-pink">How to reach us</p>
+            <p class="text-info">How to reach us</p>
             <h1>Let's Get in Touch</h1>
         </div>
         <div class="contact-us">
@@ -504,21 +487,21 @@
                     and we're responsible for our process and results. We thank each client and their projects.</p>
                 <div class="box1">
                     <div class="address ctact">
-                        <h4 class="text-pink">Our Address</h4>
+                        <h4>Our Address</h4>
                         <p>123 Stree New York City, United States Of America.</p>
                     </div>
                     <div class="phone ctact">
-                        <h4 class="text-pink">Our Phone</h4>
+                        <h4>Our Phone</h4>
                         <p>Office Telephone : 001 01085379709 Mobile : 001 63165370895</p>
                     </div>
                 </div>
                 <div class="box2">
                     <div class="email ctact">
-                        <h4 class="text-pink">Our Email</h4>
+                        <h4>Our Email</h4>
                         <p>Main Email : admin@website.com Inquiries : email@website.com</p>
                     </div>
                     <div class="support ctact">
-                        <h4 class="text-pink">Our Support</h4>
+                        <h4>Our Support</h4>
                         <p>Main Support : info@website.com Sales : support@website</p>
                     </div>
                 </div>
@@ -572,7 +555,10 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+    <!-- bootstrap -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
 
     <script src="js/script.js"></script>
 </body>

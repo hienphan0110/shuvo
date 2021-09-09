@@ -1,7 +1,10 @@
 /* PC */
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .mobile-menu {
     display: none;
+  }
+  .stage-outer img {
+    height: 660px;
   }
 }
 /* Tablet */
@@ -9,13 +12,13 @@
   .container-modal {
     min-width: 100%;
   }
-  .modal {
-    width: 768px;
-  }
   .header {
     background: #171717;
     /* top: 0; */
     /* padding: 0 32px; */
+    width: 100%;
+    /* max-width: 740px; */
+    max-width: 768px;
   }
   .navbar {
     justify-content: space-between;
@@ -96,6 +99,40 @@
   .nav {
     display: none;
   }
+  .modal {
+    max-width: 739px;
+    /* width: 100%; */
+  }
+  .container-modal {
+    width: 100%;
+    min-width: auto;
+    height: 100%;
+    padding: 20px 0;
+  }
+  .modal-heading {
+    margin: 24px 0;
+  }
+  .modal-heading > span {
+    font-size: 18px;
+  }
+  .modal-heading > h2 > span {
+    display: block;
+  }
+  .form-contact {
+    /* display: block; */
+    width: auto;
+    display: grid;
+    padding: 0 18px;
+  }
+  .form-contact input,
+  .form-contact textarea {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .main {
+    margin: 8px 0 48px;
+  }
   .slider-icon {
     display: none;
   }
@@ -111,6 +148,9 @@
   }
   .banner p {
     font-size: 13px;
+  }
+  .slick-dots {
+    display: none !important;
   }
   .about-container {
     display: block;
