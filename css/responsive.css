@@ -14,10 +14,7 @@
   }
   .header {
     background: #171717;
-    /* top: 0; */
-    /* padding: 0 32px; */
     width: 100%;
-    /* max-width: 740px; */
     max-width: 768px;
   }
   .navbar {
@@ -101,7 +98,6 @@
   }
   .modal {
     max-width: 739px;
-    /* width: 100%; */
   }
   .container-modal {
     width: 100%;
@@ -119,7 +115,6 @@
     display: block;
   }
   .form-contact {
-    /* display: block; */
     width: auto;
     display: grid;
     padding: 0 18px;

@@ -5,7 +5,7 @@ const modal = document.querySelector('.js-modal')
 const modalClose = document.querySelector('.modal-close')
 
 modalBtns.forEach(modalBtns => {
-    modalBtns.onclick = function() {
+    modalBtns.onclick = function () {
         modal.classList.add("open")
     }
 })
@@ -17,13 +17,13 @@ function hideModal() {
 modalClose.onclick = hideModal;
 modal.onclick = hideModal;
 
-modalContainer.onclick =  function(event) {
+modalContainer.onclick = function (event) {
     event.stopPropagation()
 }
 
 // 
 $(document).on('scroll', function () {
-    if ($(this).scrollTop() > 260) { 
+    if ($(this).scrollTop() > 260) {
         $('.header').addClass('header-sticky');
     }
     else {
@@ -40,7 +40,7 @@ window.addEventListener('scroll', () => {
         const scrollPosition = document.documentElement.scrollTop;
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if(scrollPosition >= (sectionTop - sectionHeight / 5)) {
+        if (scrollPosition >= (sectionTop - sectionHeight / 5)) {
             current = section.getAttribute('id');
         }
     })
@@ -50,7 +50,7 @@ window.addEventListener('scroll', () => {
             li.classList.add('active')
         }
     })
-       
+
 })
 
 // mobile menu
@@ -59,31 +59,29 @@ const mobileMenu = document.querySelector('.mobile-menu')
 const btnClose = document.querySelector('.btn-close')
 const menuItems = document.querySelectorAll('.item-link')
 
-mobileMenu.onclick = function() {
+mobileMenu.onclick = function () {
     headerMenu.style.display = "block"
 }
-btnClose.onclick = function() {
+btnClose.onclick = function () {
     headerMenu.style.display = "none"
 }
 menuItems.forEach(menuItem => {
-    menuItem.onclick = function() {
+    menuItem.onclick = function () {
         headerMenu.style.display = "none";
     }
 })
 
 // slider
 $('.slider').slick({
-    // slidesToShow: 1,
-    // slidesToScroll: 1,
     infinite: true,
     arrows: false,
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000,
     fade: true,
     cssEase: 'linear',
     speed: 400,
-    
+
 });
 
 // testimonial
@@ -142,43 +140,40 @@ plans.forEach(plans => {
 })
 
 // AOS animation
-      AOS.init( {
-        initClassName: 'aos-init',
-        offset: 0,
-        duration: 600,
-        easing: 'ease-in-sine',
-        delay: 100,
-    }); 
+AOS.init({
+    initClassName: 'aos-init',
+    offset: 0,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100,
+});
 
 
-    // 
-    const textLeft = document.querySelector('.text-left')
-    const progressBars = document.querySelectorAll('.progress-bar')
+// progress
+const textLeft = document.querySelector('.text-left')
+const progressBars = document.querySelectorAll('.progress-bar')
 
-    window.addEventListener('scroll', () => {
-        const sectionPos = textLeft.getBoundingClientRect().top;
-        const screenPos = window.innerHeight / 2;
+window.addEventListener('scroll', () => {
+    const sectionPos = textLeft.getBoundingClientRect().top;
+    const screenPos = window.innerHeight / 2;
 
-        function showProgress() {
-            progressBars.forEach(progressBar => {
-                const value = progressBar.dataset.progress;
-                // progressBar.style.opacity = 1;
-                progressBar.style.width = `${value}%`;
-            },)
-        }
-        function hideProgress() {
-            progressBars.forEach(p => {
-                // p.style.opacity = 0;
-                p.style.width = 0;
-            })
-            
-        }
+    function showProgress() {
+        progressBars.forEach(progressBar => {
+            const value = progressBar.dataset.progress;
+            progressBar.style.width = `${value}%`;
+        })
+    }
+    function hideProgress() {
+        progressBars.forEach(p => {
+            p.style.width = 0;
+        })
 
-        if (sectionPos < screenPos) {
-            showProgress();
-        }
-        else {
-            hideProgress();
-        }
-    })
-    
+    }
+
+    if (sectionPos < screenPos) {
+        showProgress();
+    }
+    else {
+        hideProgress();
+    }
+})

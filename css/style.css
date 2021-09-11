@@ -1,6 +1,3 @@
-html {
-  font-family: "Roboto", sans-serif;
-}
 /* modal */
 .modal {
   position: absolute;
@@ -138,8 +135,6 @@ html {
   position: fixed;
   width: 100%;
   background-color: #000;
-  /* height: 100px; */
-  /* top: 0; */
 }
 .navbar {
   position: absolute;
@@ -443,9 +438,7 @@ li.slick-active button {
 }
 .progress-bar {
   background-color: #c32865;
-  /* animation: progress-bar ease-in-out 2s; */
   height: 8px;
-  /* width: 0; */
   transition: all 1s;
 }
 @keyframes progress-bar {
