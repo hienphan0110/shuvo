@@ -20,9 +20,8 @@ modal.onclick = hideModal;
 modalContainer.onclick = function (event) {
     event.stopPropagation()
 }
-
 // 
-$(document).on('scroll', function () {
+$(document).on('scroll', () => {
     if ($(this).scrollTop() > 260) {
         $('.header').addClass('header-sticky');
     }
@@ -59,14 +58,14 @@ const mobileMenu = document.querySelector('.mobile-menu')
 const btnClose = document.querySelector('.btn-close')
 const menuItems = document.querySelectorAll('.item-link')
 
-mobileMenu.onclick = function () {
+mobileMenu.onclick = function() {
     headerMenu.style.display = "block"
 }
-btnClose.onclick = function () {
+btnClose.onclick = function() {
     headerMenu.style.display = "none"
 }
 menuItems.forEach(menuItem => {
-    menuItem.onclick = function () {
+    menuItem.onclick = () => {
         headerMenu.style.display = "none";
     }
 })
@@ -108,10 +107,9 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 4000);
 }
-
 // PORTFOLIO
-$(document).ready(function () {
-    $(".list").click(function () {
+$(document).ready(() => {
+    $(".list").click(() => {
         const value = $(this).attr('data-filter');
         if (value == 'All') {
             $(".gallery-item").show('1000');
@@ -177,3 +175,4 @@ window.addEventListener('scroll', () => {
         hideProgress();
     }
 })
+
