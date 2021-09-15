@@ -93,23 +93,16 @@ $('.testimonial-container').slick({
 })
 
 // START
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.querySelectorAll(".item-team");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 4000);
-}
+$('.stage-outer').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+})
 // PORTFOLIO
-$(document).ready(() => {
-    $(".list").click(() => {
+$(document).ready(function() {
+    $(".list").click(function() {
         const value = $(this).attr('data-filter');
         if (value == 'All') {
             $(".gallery-item").show('1000');

@@ -2,10 +2,7 @@
 .modal {
   position: absolute;
   width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   background: rgba(32, 28, 28, 0.7);
   display: flex;
   align-items: center;
@@ -576,6 +573,7 @@ li.slick-active button {
   background-color: #c32865;
   padding: 20px 82px;
   border-radius: 50px;
+  cursor: pointer;
 }
 .gallery-item:hover .overlay {
   height: 100%;
@@ -794,6 +792,7 @@ li.slick-active button {
   padding: 14px;
   font-size: 16px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
