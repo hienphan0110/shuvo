@@ -17,9 +17,7 @@ function hideModal() {
 modalClose.onclick = hideModal;
 modal.onclick = hideModal;
 
-modalContainer.onclick = function (event) {
-    event.stopPropagation()
-}
+modalContainer.onclick = event => event.stopPropagation();
 // 
 $(document).on('scroll', () => {
     if ($(this).scrollTop() > 260) {
@@ -33,7 +31,7 @@ $(document).on('scroll', () => {
 const sections = document.querySelectorAll('section')
 const navLi = document.querySelectorAll('.nav-item-link')
 
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll',() => {
     let current = '';
     sections.forEach(section => {
         const scrollPosition = document.documentElement.scrollTop;
@@ -75,7 +73,7 @@ $('.slider').slick({
     infinite: true,
     arrows: false,
     dots: true,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     fade: true,
     cssEase: 'linear',
@@ -168,4 +166,3 @@ window.addEventListener('scroll', () => {
         hideProgress();
     }
 })
-

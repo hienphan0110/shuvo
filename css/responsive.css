@@ -137,6 +137,7 @@
   .slider-caption {
     left: auto;
     text-align: center;
+    right: 0;
   }
   .banner h1 {
     font-size: 34px;
