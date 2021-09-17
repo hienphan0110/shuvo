@@ -15,7 +15,6 @@
   .header {
     background: #171717;
     width: 100%;
-    /* max-width: 768px; */
   }
   .navbar {
     justify-content: space-between;
@@ -46,7 +45,8 @@
     display: contents;
   }
   .fadeinright {
-    width: 100%;
+    width: 555px;
+    margin: 0 auto;
   }
   .about-box {
     font-size: 20px;
@@ -153,9 +153,9 @@
     text-align: center;
   }
   .fadeinright {
-    width: 100%;
-    padding: 0 18px;
     font-size: 17px;
+    width: 210px;
+    margin: 0 auto;
   }
   .about-box {
     padding: 38px 0;
